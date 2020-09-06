@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_update_data_detail
+command=sh ../../batch_trans.sh ../../report/batch_orders_update/script/batch_orders_update.sql
+retries=3
+retry.backoff=300000

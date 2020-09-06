@@ -1,0 +1,6 @@
+type=command
+dependencies=orders_trans,mater_records_trans_wx,check_option_trans_ex_wx
+command=sh ../../batch_trans.sh ../../report/batch_orders_repay_record/script/orders_repay_record_1.sql
+retries=5
+retry.backoff=600000
+type=command

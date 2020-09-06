@@ -1,0 +1,5 @@
+type=command
+dependencies=dwd_fact_order_shixiao
+command=sh ../../batch_order.sh ../../report/dws_report_risk_node_info/script/tmp_report_risk_node_info_p1.sql
+retries=3
+retry.backoff=600000

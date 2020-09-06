@@ -1,0 +1,5 @@
+type=command
+dependencies=dwd_report_risk_node_info
+command=sh ../../batch_order.sh ../../report/tmp_report_activity_base/script/tmp_report_activity_base.sql
+retries=3
+retry.backoff=600000

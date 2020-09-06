@@ -1,0 +1,5 @@
+type=command
+dependencies=Start_QY_Task
+command=sh ../../batch_order.sh ../../report/dws_sys_user_auto_fill/script/dws_sys_user_auto_fill.sql
+retries=3
+retry.backoff=600000

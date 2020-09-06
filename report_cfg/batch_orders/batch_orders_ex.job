@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_orders_batch_init_pt_product1,c_fund_module_trans
+command=sh ../../batch_order.sh ../../report/batch_orders/script/orders_batch_init_1.sql
+retries=5
+retry.backoff=600000

@@ -1,0 +1,5 @@
+type=command
+dependencies=batch_orders_ex, dim_c_work_calendar
+command=sh ../../batch_order.sh ../../report/dim_monthly_accumulative_work_date/script/dim_monthly_accumulative_work_date.sql
+retries=3
+retry.backoff=600000

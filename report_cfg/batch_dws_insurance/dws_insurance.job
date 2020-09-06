@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,hit_rule,orders_trans,isr_mixed,new_loan_trans,ori_loan_trans,check_option_trans_ex_wx,c_fund_module_trans
+command=sh ../../batch_trans.sh ../../report/batch_dws_insurance/script/insurance.sql
+retries=3
+retry.backoff=600000

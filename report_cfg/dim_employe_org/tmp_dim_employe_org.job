@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow
+command=sh ../../batch_order.sh ../../report/dim_employe_org/script/tmp_dim_employe_org.sql
+retries=3
+retry.backoff=600000

@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_dws_order_total_agg_add,batch_orders_ex
+command=sh ../../batch_order.sh ../../report/tmp_dws_order_total_agg/script/tmp_dws_order_total_agg.sql
+retries=5
+retry.backoff=600000

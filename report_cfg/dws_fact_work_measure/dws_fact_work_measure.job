@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_fact_work_measure, dws_sys_user_auto_fill
+command=sh ../../batch_order.sh ../../report/dws_fact_work_measure/script/dws_fact_work_measure.sql
+retries=3
+retry.backoff=600000

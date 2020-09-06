@@ -1,0 +1,5 @@
+type=command
+dependencies=batch_finance,tmp_order_cost_capital_fr,dim_order_fr_rate
+command=sh ../../batch_order.sh ../../report/dwd_order_fenrun_ledger/script/dwd_order_fenrun_ledger.sql
+retries=3
+retry.backoff=600000

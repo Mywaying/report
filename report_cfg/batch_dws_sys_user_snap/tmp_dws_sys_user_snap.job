@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow
+command=sh ../../batch_order.sh ../../report/batch_dws_sys_user_snap/script/tmp_dws_sys_user_snap.sql
+retries=3
+retry.backoff=600000

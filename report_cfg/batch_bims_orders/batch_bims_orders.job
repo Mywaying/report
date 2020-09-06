@@ -1,0 +1,5 @@
+type=command
+dependencies=risk_control_app_trans,house_bims_trans,orders_bims_trans,query_docking_result_bims,channel_bims_trans,repayment_plan_trans,query_estimate_bims_trans,check_option_bims_trans,check_option_bims_trans_ex,check_option_bims_trans_ex_wx,isr_mixed_bims,product_apply_info_bims_trans,sys_dict_bims_trans,mater_records_bims_trans,fee_bims_trans,fee_bims_trans_wx,sys_user_bims_trans,customer_bims_rel,sys_org_user_bims_trans,query_credit_bims,p2p_ret_bims,p2p_ret_bims_wx
+command=sh ../../batch_trans.sh ../../report/batch_bims_orders/script/orders_batch_init.sql
+retries=3
+retry.backoff=600000

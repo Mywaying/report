@@ -1,0 +1,5 @@
+type=command
+dependencies=dwd_fact_order_shixiao
+command=sh ../../batch_order.sh ../../report/dws_fact_work_measure/script/tmp_fact_work_measure.sql
+retries=3
+retry.backoff=600000

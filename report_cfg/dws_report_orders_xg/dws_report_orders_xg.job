@@ -1,0 +1,5 @@
+type=command
+dependencies=dim_employe_org,tmp_dws_order_agg,tmp_dws_order_total_agg
+command=sh ../../batch_order.sh ../../report/dws_report_orders_xg/script/dws_report_orders_xg.sql
+retries=3
+retry.backoff=600000

@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,check_option_trans_ex_wx,ransom_floor,orders_trans,isr_mixed,new_loan_trans,c_fund_module_trans
+command=sh ../../batch_order.sh ../../report/batch_dws_order_process_node_num/script/tmp_dws_order_process_node_num.sql
+retries=3
+retry.backoff=600000

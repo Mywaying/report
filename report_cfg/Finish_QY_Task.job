@@ -1,0 +1,5 @@
+type=command
+dependencies=dwd_fee_factor,dws_activity_company_month, dws_activity_sales_team_month, dws_activity_salesman_month, dws_fact_work_measure, dwd_report_risk_node_info, dws_sys_user_auto_fill,dwd_fact_order_shixiao
+command=/bin/sh ../batch_ok.sh 'qy'
+retries=3
+retry.backoff=600000

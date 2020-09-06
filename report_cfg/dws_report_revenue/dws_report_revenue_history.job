@@ -1,0 +1,5 @@
+type=command
+dependencies=dws_report_revenue
+command=sh ../../batch_trans.sh ../../report/dws_report_revenue/script/dws_report_revenue_history.sql
+retries=3
+retry.backoff=600000

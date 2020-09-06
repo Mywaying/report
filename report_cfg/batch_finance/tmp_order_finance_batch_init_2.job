@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,tmp_order_finance_batch_init
+command=sh ../../batch_order.sh ../../report/batch_finance/script/tmp_order_finance_batch_init_2.sql
+retries=5
+retry.backoff=600000

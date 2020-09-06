@@ -1,0 +1,5 @@
+type=command
+dependencies=
+command= echo "Start qy Task"
+retries=3
+retry.backoff=600000

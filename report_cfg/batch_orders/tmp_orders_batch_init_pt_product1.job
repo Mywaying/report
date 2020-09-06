@@ -1,0 +1,5 @@
+type=command
+dependencies=ods_order_agg_common,tmp_dim_employe_org,tmp_dws_sys_user_snap,tmp_dws_sys_user_snap_all,biz_fee_summary_trans,biz_apply_order_extend_trans,data_update,orders_finance_trans,house_transfer_trans,product_apply_info_trans,supervision_trans,sys_org_user_trans,ransom_floor,isr_mixed,fee_trans,fee_trans_wx,deal_info_trans,query_estimate_trans,query_archive_trans,biz_account_trans,customer_rel,channel_trans,check_option_trans,check_option_trans_ex,check_option_trans_ex_wx,house_trans,mater_records_trans_1,mater_records_trans,new_loan_trans,orders_trans,ori_loan_trans,sys_dict_trans,sys_user_trans
+command=sh ../../batch_trans.sh ../../report/batch_orders/script/tmp_orders_batch_init_pt_product1.sql
+retries=6
+retry.backoff=600000

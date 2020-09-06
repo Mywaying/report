@@ -1,0 +1,5 @@
+type=command
+dependencies=check_option_flow_trans_ex_wx,data_update_account_info,data_update_customer_info,data_update_deal_info,data_update_fee_info,data_update_house_info,data_update_new_loan_info,data_update_ori_loan_info,data_update_other_info,data_update_product_info,data_update_sales_info
+command=sh ../../batch_trans.sh ../../report/batch_orders_update/script/tmp_update_data_detail.sql
+retries=3
+retry.backoff=300000

@@ -1,0 +1,5 @@
+type=command
+dependencies=orders_trans,check_option_trans_ex_wx,appoint_info,handle_order_trans
+command=sh ../../batch_trans.sh ../../report/batch_pad_orders/script/orders_batch_init.sql
+retries=3
+retry.backoff=300000

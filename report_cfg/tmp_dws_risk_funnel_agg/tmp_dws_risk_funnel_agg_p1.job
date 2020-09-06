@@ -1,0 +1,5 @@
+type=command
+dependencies=orders_trans,ods_finance_agg_common
+command=sh ../../batch_trans.sh ../../report/tmp_dws_risk_funnel_agg/script/tmp_dws_risk_funnel_agg_p1.sql
+retries=3
+retry.backoff=600000

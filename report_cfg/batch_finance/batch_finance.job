@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_order_finance_batch_init_2, dim_bank,fee_trans_wx
+command=sh ../../batch_order.sh ../../report/batch_finance/script/order_finance_batch_init.sql
+retries=5
+retry.backoff=600000

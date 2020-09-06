@@ -1,0 +1,6 @@
+type=command
+dependencies=ods_start
+command=sh ../../batch_trans_init.sh ../../report/batch_orders_repay_record/script/orders_repay_record_1.sql
+retries=5
+retry.backoff=600000
+type=command

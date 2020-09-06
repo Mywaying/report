@@ -1,0 +1,5 @@
+type=command
+dependencies=dws_activity_company_day
+command=sh ../../batch_order.sh ../../report/dws_activity_company/script/dws_activity_company_month.sql
+retries=3
+retry.backoff=600000

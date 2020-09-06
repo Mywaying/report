@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,tpm_dws_order_process_node_num
+command=sh ../../batch_order.sh ../../report/batch_dws_order_process_node_num/script/dws_order_process_node_num.sql
+retries=6
+retry.backoff=600000

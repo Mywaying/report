@@ -1,0 +1,5 @@
+type=command
+dependencies=dws_sys_user_auto_fill
+command=sh ../../batch_order.sh ../../report/dwd_fact_order_shixiao/script/dwd_fact_order_shixiao.sql
+retries=3
+retry.backoff=600000

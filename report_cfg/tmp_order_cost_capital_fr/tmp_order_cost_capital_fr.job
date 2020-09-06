@@ -1,0 +1,5 @@
+type=command
+dependencies=isr_mixed,batch_orders_ex,c_fund_module_trans,orders_trans
+command=sh ../../batch_trans.sh ../../report/tmp_order_cost_capital_fr/script/tmp_order_cost_capital_fr.sql
+retries=3
+retry.backoff=150000

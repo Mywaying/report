@@ -1,0 +1,5 @@
+type=command
+dependencies=orders_trans,check_option_trans_ex_wx,c_fund_module_trans
+command=sh ../../batch_order.sh ../../report/ods_order_agg_common/script/ods_order_agg_common.sql
+retries=3
+retry.backoff=600000

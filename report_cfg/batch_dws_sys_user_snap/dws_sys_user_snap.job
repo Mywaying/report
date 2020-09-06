@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_dws_sys_user_snap_2, tmp_dws_sys_user_snap_all
+command=sh ../../batch_order.sh ../../report/batch_dws_sys_user_snap/script/dws_sys_user_snap.sql
+retries=3
+retry.backoff=600000

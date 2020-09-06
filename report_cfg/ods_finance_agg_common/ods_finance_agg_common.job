@@ -1,0 +1,5 @@
+type=command
+dependencies=check_option_trans,orders_trans,check_option_trans_ex_wx,new_loan_trans,ransom_floor,icrGuarantee,icrLoanInfo,c_fund_module_trans
+command=sh ../../batch_order.sh ../../report/ods_finance_agg_common/script/ods_finance_agg_common.sql
+retries=3
+retry.backoff=600000

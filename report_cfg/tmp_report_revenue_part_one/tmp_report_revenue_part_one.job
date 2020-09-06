@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,ransom_floor,orders_trans,batch_orders_ex,batch_finance
+command=sh ../../batch_order.sh ../../report/tmp_report_revenue_part_one/script/tmp_report_revenue_part_one.sql
+retries=3
+retry.backoff=600000

@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_dws_order_agg
+command=sh ../../batch_trans.sh ../../report/dws_report_orders_jzzy/script/dws_report_orders_jzzy.sql
+retries=5
+retry.backoff=600000

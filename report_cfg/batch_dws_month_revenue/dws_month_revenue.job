@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,check_option_trans_ex_wx,orders_trans,isr_mixed,orders_finance_trans
+command=sh ../../batch_order.sh ../../report/batch_dws_month_revenue/script/dws_revenue_init.sql 2017-01-01
+retries=6
+retry.backoff=600000

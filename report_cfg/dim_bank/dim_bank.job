@@ -1,0 +1,5 @@
+type=command
+dependencies=orders_trans,new_loan_trans
+command=sh ../../batch_trans.sh ../../report/dim_bank/script/dim_bank.sql
+retries=3
+retry.backoff=600000

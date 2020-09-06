@@ -1,0 +1,5 @@
+type=command
+dependencies=ods_start
+command=sh ../../batch_order.sh ../../report/batch_dwd_rsc_credit/script/tmp_ods_rcs_icrloaninfo_latest24state_split.sql
+retries=3
+retry.backoff=600000

@@ -1,0 +1,5 @@
+type=command
+dependencies=ods_finance_agg_common,orders_trans,check_option_trans_ex_wx
+command=sh ../../batch_order.sh ../../report/tmp_dws_order_total_agg/script/tmp_dws_order_total_agg_add.sql
+retries=3
+retry.backoff=600000

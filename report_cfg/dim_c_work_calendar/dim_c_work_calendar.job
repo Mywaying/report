@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow
+command=sh ../../batch_trans.sh ../../report/dim_c_work_calendar/script/dim_c_work_calendar.sql
+retries=3
+retry.backoff=600000

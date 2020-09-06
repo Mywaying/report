@@ -1,0 +1,5 @@
+type=command
+dependencies=bpms_flow,sys_dict_trans
+command=sh ../../batch_order.sh ../../report/batch_fees/script/order_fees_batch_init.sql
+retries=3
+retry.backoff=600000

@@ -1,0 +1,5 @@
+type=command
+dependencies=check_option_trans,orders_trans
+command=sh ../../batch_order.sh ../../report/batch_work/script/order_work_batch_init.sql
+retries=5
+retry.backoff=600000

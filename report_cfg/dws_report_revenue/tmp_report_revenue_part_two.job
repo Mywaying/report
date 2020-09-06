@@ -1,0 +1,5 @@
+type=command
+dependencies=tmp_report_revenue_part_two_add
+command=sh ../../batch_trans.sh ../../report/dws_report_revenue/script/tmp_report_revenue_part_two.sql
+retries=3
+retry.backoff=600000
